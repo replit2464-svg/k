@@ -1,0 +1,6 @@
+{
+  "name": "PEMIRA HIMATEKIA ITERA 2026",
+  "description": "Portal resmi Pemilihan Raya Himpunan Mahasiswa Teknik Kimia Institut Teknologi Sumatera (HIMATEKIA-ITERA) 2026 untuk memilih Calon Ketua Badan Pengurus Harian dan Calon Senator.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
