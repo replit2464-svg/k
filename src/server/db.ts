@@ -96,21 +96,29 @@ export async function getDb(): Promise<DbAdapter> {
   if (adapterPromise) return adapterPromise;
 
   adapterPromise = (async () => {
-    const hasPgEnv = Boolean(
-      process.env.PGHOST &&
-        process.env.PGDATABASE &&
-        process.env.PGUSER &&
-        process.env.PGHOST !== 'MY_PGHOST'
-    );
+    const databaseUrl = process.env.DATABASE_URL?.trim();
+    const hasPgEnv =
+      process.env.PEMIRA_EPHEMERAL !== '1' &&
+      Boolean(
+        databaseUrl ||
+          (process.env.PGHOST &&
+            process.env.PGDATABASE &&
+            process.env.PGUSER &&
+            process.env.PGHOST !== 'MY_PGHOST')
+      );
 
     if (hasPgEnv) {
       const pool = new Pool({
-        host: process.env.PGHOST,
-        port: Number(process.env.PGPORT || 5432),
-        database: process.env.PGDATABASE,
-        user: process.env.PGUSER,
-        password: process.env.PGPASSWORD || '',
-        ssl: process.env.PGSSL === 'true' ? { rejectUnauthorized: false } : false,
+        ...(databaseUrl
+          ? { connectionString: databaseUrl }
+          : {
+              host: process.env.PGHOST,
+              port: Number(process.env.PGPORT || 5432),
+              database: process.env.PGDATABASE,
+              user: process.env.PGUSER,
+              password: process.env.PGPASSWORD || '',
+            }),
+        ...(process.env.PGSSL === 'true' ? { ssl: { rejectUnauthorized: false } } : {}),
         max: 10,
         connectionTimeoutMillis: 10000,
       });

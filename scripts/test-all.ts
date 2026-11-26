@@ -38,16 +38,20 @@ async function reqJson<T>(
 async function runTests() {
   console.log('=== PEMIRA HIMATEKIA ITERA 2026 — End-to-End Test Suite ===');
 
-  const serverProc: ChildProcess = spawn('npx', ['tsx', 'server.ts'], {
-    env: {
-      ...process.env,
-      PORT: String(TEST_PORT),
-      PEMIRA_EPHEMERAL: '1',
-      ADMIN_USERNAME: 'test_admin_kpr',
-      ADMIN_PASSWORD: 'test_secret_pass_2026',
-    },
-    stdio: ['ignore', 'pipe', 'pipe'],
-  });
+  const serverProc: ChildProcess = spawn(
+    process.execPath,
+    ['node_modules/tsx/dist/cli.mjs', 'server.ts'],
+    {
+      env: {
+        ...process.env,
+        PORT: String(TEST_PORT),
+        PEMIRA_EPHEMERAL: '1',
+        ADMIN_USERNAME: 'test_admin_kpr',
+        ADMIN_PASSWORD: 'test_secret_pass_2026',
+      },
+      stdio: ['ignore', 'pipe', 'pipe'],
+    }
+  );
 
   let passed = 0;
   const check = (label: string, fn: () => Promise<void> | void) =>
