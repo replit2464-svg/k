@@ -57,7 +57,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
       .then((res) => {
         if (!active) return;
         setAdminStatus(res);
-        setAdminUsername(res.suggestedUsername || '');
+        setAdminUsername('');
       })
       .catch(() => {
         // Ignore silent status check failure
