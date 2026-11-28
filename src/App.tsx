@@ -31,12 +31,6 @@ export default function App() {
     ...BPH_CANDIDATES,
     ...SENATOR_CANDIDATES,
   ]);
-  const [publicStats, setPublicStats] = useState({
-    totalDpt: 0,
-    totalValidated: 0,
-    totalVoted: 0,
-  });
-
   // Modals on public landing
   const [activeCandidate, setActiveCandidate] = useState<Candidate | null>(null);
   const [comparedCandidates, setComparedCandidates] = useState<Candidate[]>([]);
@@ -81,7 +75,6 @@ export default function App() {
       if (res.candidates.length > 0) {
         setCandidates(res.candidates);
       }
-      setPublicStats(res.stats);
     } catch {
       // Fallback to initial seed display if request fails
     }
@@ -249,13 +242,11 @@ export default function App() {
         />
 
         <main className="flex-1">
-          {/* Hero & Architectural Factual Strip */}
+          {/* Hero and candidate overview */}
           <Hero
             onOpenPortal={handleOpenPortalOrWorkspace}
             bphCount={bphCandidates.length}
             senatorCount={senatorCandidates.length}
-            totalDpt={publicStats.totalDpt}
-            totalVoted={publicStats.totalVoted}
           />
 
           {/* Section 01: Calon Ketua Badan Pengurus Harian (BPH) HIMATEKIA-ITERA 2026 */}

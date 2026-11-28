@@ -7,16 +7,12 @@ interface HeroProps {
   onOpenPortal: () => void;
   bphCount: number;
   senatorCount: number;
-  totalDpt: number;
-  totalVoted: number;
 }
 
 export const Hero: React.FC<HeroProps> = ({
   onOpenPortal,
   bphCount,
   senatorCount,
-  totalDpt,
-  totalVoted,
 }) => {
   const [logoError, setLogoError] = useState(false);
 
@@ -165,8 +161,8 @@ export const Hero: React.FC<HeroProps> = ({
           </div>
         </div>
 
-        {/* Full-Width 4-Column Architectural Strip */}
-        <div className="mt-10 border border-[#E2DFD7] bg-white grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[#E2DFD7]">
+        {/* Candidate overview strip */}
+        <div className="mt-10 border border-[#E2DFD7] bg-white grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-[#E2DFD7]">
           <div className="p-5 sm:p-6">
             <div className="font-mono text-xs text-[#480E8A] tabular-nums mb-1.5">01</div>
             <div className="font-display text-base font-bold text-[#0B0B0E]">
@@ -187,25 +183,6 @@ export const Hero: React.FC<HeroProps> = ({
             </p>
           </div>
 
-          <div className="p-5 sm:p-6">
-            <div className="font-mono text-xs text-[#0B0B0E]/55 tabular-nums mb-1.5">03</div>
-            <div className="font-display text-base font-bold text-[#0B0B0E] tabular-nums">
-              {totalDpt > 0 ? `${totalDpt} Pemilih DPT` : 'Daftar Pemilih Tetap'}
-            </div>
-            <p className="mt-1 text-xs text-[#0B0B0E]/65 leading-relaxed">
-              Mahasiswa aktif Teknik Kimia angkatan 2020–2025 dengan kode unik & barcode.
-            </p>
-          </div>
-
-          <div className="p-5 sm:p-6">
-            <div className="font-mono text-xs text-[#0B0B0E]/55 tabular-nums mb-1.5">04</div>
-            <div className="font-display text-base font-bold text-[#0B0B0E] tabular-nums">
-              {totalVoted} Suara Masuk
-            </div>
-            <p className="mt-1 text-xs text-[#0B0B0E]/65 leading-relaxed">
-              Validasi langsung oleh Validator KPR sebelum pembukaan surat suara.
-            </p>
-          </div>
         </div>
       </div>
     </section>
