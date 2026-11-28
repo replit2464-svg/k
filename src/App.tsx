@@ -484,7 +484,7 @@ export default function App() {
             </div>
           </section>
 
-          {/* Section 03 & 04: Linimasa & Mekanisme Pemilihan */}
+          {/* Mekanisme & Tata Cara Pemilihan */}
           <TimelineAndMechanism />
 
           {/* Final Decision CTA Band */}
@@ -546,9 +546,6 @@ export default function App() {
                 </a>
                 <a href="#kandidat-senator" className="block text-[#FAF9F6]/75 hover:text-white">
                   Calon Senator 2026
-                </a>
-                <a href="#linimasa" className="block text-[#FAF9F6]/75 hover:text-white">
-                  Linimasa Pemilihan
                 </a>
                 <a href="#mekanisme" className="block text-[#FAF9F6]/75 hover:text-white">
                   Mekanisme & Tata Cara
