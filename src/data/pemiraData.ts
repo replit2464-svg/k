@@ -48,18 +48,17 @@ export const BPH_CANDIDATES: Candidate[] = [
     number: '01',
     chamber: 'bph',
     chamberLabel: 'Calon Ketua BPH HIMATEKIA-ITERA 2026',
-    name: 'Muhammad Farhan Al-Rasyid',
-    nim: '123280018',
-    cohort: 'Teknik Kimia 2023',
-    origin: 'Bandar Lampung',
-    motto: 'Rekayasa Sinergi, Katalisator Karya Nyata.',
+    name: 'HAFIIDZURROHMAN GUNTORO',
+    nim: '-',
+    cohort: 'Teknik Kimia',
+    origin: 'ITERA',
+    motto: 'Tampung Aspirasi, Wujudkan Karya Kreatif.',
     vision:
-      'Mewujudkan HIMATEKIA-ITERA sebagai ruang bertumbuh yang adaptif, progresif secara riset keteknikkimiaan, dan berakar kuat pada solidaritas kekeluargaan antarangkatan.',
+      'Menjadikan HIMATEKIA-ITERA sebagai wadah tampung aspirasi dan pengembangan ide kreatif serta inovatif mahasiswa dan mendorong terciptanya lingkungan organisasi yang harmonis, kolaboratif, dan unggul dalam bidang akademik, dengan berlandaskan nilai-nilai kekeluargaan dan integritas serta berorientasi pada pengamalan Tridarma Perguruan Tinggi.',
     missions: [
-      'Mengakselerasi inkubasi riset mahasiswa Teknik Kimia melalui pendampingan terstruktur menuju kompetisi proses dan desain pabrik tingkat nasional.',
-      'Membangun tata kelola organisasi BPH yang transparan berbasis evaluasi triwulanan terbuka untuk seluruh anggota biasa.',
-      'Memperluas kemitraan industri proses di koridor Sumatera dan Jawa guna membuka jalur kunjungan pabrik serta persiapan pascakampus.',
-      'Menghadirkan sistem kaderisasi berjenjang yang menyeimbangkan kesiapan akademik, etika profesi insinyur, dan kepekaan sosial.',
+      'Mewujudkan lingkungan organisasi yang harmonis dan suportif dengan menjunjung tinggi nilai-nilai kekeluargaan dan integritas serta menjadi wadah tampung aspirasi dan pengembangan ide kreatif dan inovatif mahasiswa.',
+      'Mengoptimalkan pengembangan akademik dan keilmuan mahasiswa melalui kegiatan edukatif, inovatif, serta pengembangan keprofesian.',
+      'Meningkatkan peran HIMATEKIA melalui kolaborasi strategis dan kontribusi aktif dalam lingkungan kampus maupun masyarakat.',
     ],
     programs: [
       {
@@ -87,24 +86,26 @@ export const BPH_CANDIDATES: Candidate[] = [
       'Finalis National Chemical Engineering Process Design Competition 2025',
     ],
     plateVariant: 'distillation',
+    photoUrl: '/assets/aistudio/1_CALON KETUA BPH_HAFIIDZURROHMAN.png',
   },
   {
     id: 'bph-02',
     number: '02',
     chamber: 'bph',
     chamberLabel: 'Calon Ketua BPH HIMATEKIA-ITERA 2026',
-    name: 'Nadia Putri Kusumawardani',
-    nim: '123280047',
-    cohort: 'Teknik Kimia 2023',
-    origin: 'Palembang',
-    motto: 'Berdaya Bersama, Bertumbuh Berkelanjutan.',
+    name: 'SIMSON SANGAPAN SIANIPAR',
+    nim: '-',
+    cohort: 'Teknik Kimia',
+    origin: 'ITERA',
+    motto: 'Unggul, Progresif, Adaptif, dan Berdaya Saing.',
     vision:
-      'Menjadikan HIMATEKIA-ITERA sebagai himpunan yang inklusif, berdampak langsung pada kesejahteraan mahasiswa Teknik Kimia, serta unggul dalam inovasi teknik kimia berkelanjutan.',
+      'Mewujudkan HIMATEKIA-ITERA sebagai himpunan yang unggul, progresif, adaptif, dan berdaya saing di tingkat internal maupun eksternal ITERA melalui kepengurusan yang berintegritas, jernih dalam berpikir, bijaksana dalam bertindak, serta berorientasi pada dampak nyata dan keberlanjutan organisasi.',
     missions: [
-      'Mengoptimalkan advokasi akademik dan kesejahteraan mahasiswa agar tidak ada warga Teknik Kimia yang tertinggal dalam proses studi.',
-      'Mendorong pengabdian masyarakat berbasis teknologi tepat guna pengolahan limbah dan energi biomassa di sekitar Lampung Selatan.',
-      'Menata ulang alur komunikasi antar-divisi BPH dengan pendekatan berbasis proyek yang terukur dan tidak membebani mahasiswa.',
-      'Memperkuat jejaring eksternal dengan BKKMTKI dan himpunan teknik kimia se-Indonesia.',
+      'Mengembangkan potensi dan kompetensi mahasiswa Teknik Kimia untuk menciptakan sumber daya mahasiswa yang unggul dan berdaya saing.',
+      'Membangun budaya organisasi yang kolaboratif, inklusif, dan partisipatif melalui komunikasi terbuka serta penyaluran aspirasi mahasiswa.',
+      'Mendorong inovasi dan program kerja yang solutif, relevan, serta memberikan dampak nyata bagi mahasiswa dan lingkungan sekitar.',
+      'Memperluas jejaring dan kolaborasi strategis dengan organisasi maupun pihak eksternal untuk meningkatkan eksistensi HIMATEKIA-ITERA.',
+      'Mewujudkan tata kelola organisasi yang profesional, bertanggung jawab, dan berkelanjutan melalui perencanaan serta evaluasi yang terarah.',
     ],
     programs: [
       {
@@ -132,6 +133,7 @@ export const BPH_CANDIDATES: Candidate[] = [
       'Delegasi Musyawarah Wilayah BKKMTKI Daerah II 2024',
     ],
     plateVariant: 'reactor',
+    photoUrl: '/assets/aistudio/2_CALON KETUA BPH_SIMSON.PNG',
   },
 ];
 
@@ -141,17 +143,17 @@ export const SENATOR_CANDIDATES: Candidate[] = [
     number: '01',
     chamber: 'senator',
     chamberLabel: 'Calon Senator HIMATEKIA-ITERA 2026',
-    name: 'Bagas Prakoso Wijaya',
-    nim: '122280034',
-    cohort: 'Teknik Kimia 2022',
-    origin: 'Metro, Lampung',
-    motto: 'Mengawal Aspirasi, Menjaga Marwah Konstitusi.',
+    name: 'ARVIN DAMARIO AGUNG PUTRA',
+    nim: '-',
+    cohort: 'Teknik Kimia',
+    origin: 'ITERA',
+    motto: 'Representatif, Kritis, dan Responsif.',
     vision:
-      'Menghadirkan representasi legislatif Teknik Kimia yang kritis, komunikatif, dan konsisten mengawal kebijakan KM-ITERA agar selaras dengan kebutuhan massa HIMATEKIA.',
+      'Mewujudkan Senator HIMATEKIA-ITERA sebagai lembaga representatif yang kritis, inovatif, berintegritas, dan responsif dalam memperjuangkan aspirasi serta mengawal arah gerak organisasi melalui komunikasi yang terbuka, partisipatif, dan kolaboratif, dengan menjunjung tinggi kesetaraan setiap suara, penghargaan terhadap perbedaan, serta keberpihakan terhadap kepentingan bersama demi kemajuan HIMATEKIA-ITERA.',
     missions: [
-      'Menyelenggarakan serap aspirasi rutin sebelum dan sesudah sidang paripurna Senat Mahasiswa KM-ITERA.',
-      'Mengawal fungsi pengawasan terhadap pelaksanaan GBHK dan anggaran BPH HIMATEKIA-ITERA secara objektif dan konstruktif.',
-      'Mempublikasikan risalah sikap serta hasil sidang KM-ITERA dalam bahasa yang ringkas dan mudah dipahami mahasiswa Teknik Kimia.',
+      'Membangun sistem representatif dan penyaluran aspirasi yang terbuka dan responsif dengan menyediakan ruang komunikasi yang mudah dijangkau oleh seluruh massa HIMATEKIA-ITERA, serta memastikan setiap aspirasi, kritik, dan gagasan mendapatkan kajian, penyampaian, dan kejelasan tindak lanjut.',
+      'Mengembangkan budaya berpikir kritis, partisipatif, dan kolaboratif melalui forum diskusi, pertukaran gagasan, serta penguatan kemampuan anggota dalam berargumentasi, berkomunikasi, dan menyampaikan pendapat secara objektif dan bertanggung jawab.',
+      'Memperkuat fungsi kajian dan responsivitas senator melalui evaluasi kebijakan secara objektif, transparansi kinerja, serta respons aktif terhadap berbagai isu di bidang sosial, akademik, dan eksternal yang berpotensi memengaruhi HIMATEKIA-ITERA, guna memastikan organisasi tetap adaptif dan berpihak pada kepentingan Bersama.',
     ],
     programs: [
       {
@@ -173,23 +175,24 @@ export const SENATOR_CANDIDATES: Candidate[] = [
       'Delegasi Kajian Strategis Kebijakan Kampus KM-ITERA 2024',
     ],
     plateVariant: 'lattice',
+    photoUrl: '/assets/aistudio/1_CALON SENATOR_ARVIN.png',
   },
   {
     id: 'sen-02',
     number: '02',
     chamber: 'senator',
     chamberLabel: 'Calon Senator HIMATEKIA-ITERA 2026',
-    name: 'Clarissa Aurelia Situmorang',
-    nim: '123280062',
-    cohort: 'Teknik Kimia 2023',
-    origin: 'Medan',
-    motto: 'Legislasi Jernih, Suara Teknik Kimia Terwakili.',
+    name: 'ALIA RAHMI AZ ZAHRA',
+    nim: '-',
+    cohort: 'Teknik Kimia',
+    origin: 'ITERA',
+    motto: 'Aspiratif, Kritis, dan Berintegritas.',
     vision:
-      'Menjadi jembatan dua arah yang akuntabel antara dinamika kebijakan di Senat KM-ITERA dan realitas mahasiswa Teknik Kimia ITERA.',
+      'Menjadi Senator HIMATEKIA-ITERA yang aspiratif, kritis, dan berintegritas dalam membawa serta mengawal suara massa, memperkuat sinergi kelembagaan, dan menghadirkan kontribusi nyata bagi kemajuan HIMATEKIA-ITERA.',
     missions: [
-      'Memastikan setiap rancangan peraturan kemahasiswaan dikaji bersama massa Teknik Kimia sebelum tahap pengesahan.',
-      'Membangun mekanisme pengawasan anggaran dan kepatuhan AD/ART himpunan berbasis indikator kinerja yang jelas.',
-      'Meningkatkan literasi konstitusi kemahasiswaan di kalangan kader muda Teknik Kimia.',
+      'Memperkuat peran senator dalam menyerap dan mengawal aspirasi massa agar kepentingan mahasiswa dapat terwakili dalam proses kelembagaan HIMATEKIA-ITERA.',
+      'Mendorong tumbuhnya budaya diskusi dan kesadaran kritis mahasiswa dalam memahami serta merespons isu kemahasiswaan sebagai dasar membangun gerakan yang terarah dan bertanggung jawab.',
+      'Menumbuhkan kesadaran dan kepedulian mahasiswa terhadap persoalan bersama serta partisipasi aktif dalam menciptakan perubahan yang konstruktif bagi HIMATEKIA-ITERA.',
     ],
     programs: [
       {
@@ -211,44 +214,7 @@ export const SENATOR_CANDIDATES: Candidate[] = [
       'Juara 2 Debat Ilmiah Mahasiswa Tingkat Institut 2024',
     ],
     plateVariant: 'equilibrium',
-  },
-  {
-    id: 'sen-03',
-    number: '03',
-    chamber: 'senator',
-    chamberLabel: 'Calon Senator HIMATEKIA-ITERA 2026',
-    name: 'Rafi Akbar Maulana',
-    nim: '123280091',
-    cohort: 'Teknik Kimia 2023',
-    origin: 'Bekasi',
-    motto: 'Tegas dalam Pengawasan, Terbuka dalam Dialog.',
-    vision:
-      'Membangun peran Senator HIMATEKIA-ITERA yang proaktif mengadvokasi isu fasilitas laboratorium, kebijakan akademik institut, serta akuntabilitas eksekutif himpunan.',
-    missions: [
-      'Menginisiasi kajian berbasis data terkait kebutuhan sarana praktikum dan ruang himpunan bersama perwakilan program studi.',
-      'Menjaga independensi fungsi legislatif agar evaluasi terhadap BPH berjalan adil, berbasis bukti, dan solutif.',
-      'Membuka kanal pengaduan langsung terkait kebijakan KM-ITERA yang berdampak pada aktivitas mahasiswa Teknik Kimia.',
-    ],
-    programs: [
-      {
-        title: 'Audit Partisipatif Fasilitas & UKT',
-        summary:
-          'Kompilasi data kebutuhan fasilitas penunjang Teknik Kimia sebagai bahan advokasi resmi di forum Senat KM-ITERA.',
-        target: 'Satu dokumen kajian per semester',
-      },
-      {
-        title: 'Laporan Pertanggungjawaban Tengah Periode',
-        summary:
-          'Sesi dengar evaluasi terbuka antara Senator dan jajaran BPH HIMATEKIA di pertengahan masa bakti.',
-        target: 'Terbuka untuk seluruh anggota biasa HIMATEKIA',
-      },
-    ],
-    trackRecord: [
-      'Ketua Pelaksana Seminar Nasional Teknik Kimia ITERA 2025',
-      'Anggota Komisi Advokasi HIMATEKIA-ITERA 2024–2025',
-      'Perwakilan Mahasiswa pada Forum Evaluasi Kurikulum Prodi 2025',
-    ],
-    plateVariant: 'catalyst',
+    photoUrl: '/assets/aistudio/2_CALON SENATOR_ALIA.png',
   },
 ];
 

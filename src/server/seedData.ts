@@ -85,35 +85,48 @@ export async function ensureSeeded(db: DbAdapter): Promise<void> {
     }
   }
 
-  const existingCandidatesRes = await db.query('SELECT COUNT(*) AS cnt FROM candidates');
-  const candidateCount = Number(existingCandidatesRes.rows[0]?.cnt ?? 0);
-
-  if (candidateCount === 0) {
-    const initialCandidates = [...BPH_CANDIDATES, ...SENATOR_CANDIDATES];
-    for (const c of initialCandidates) {
-      await db.query(
-        `INSERT INTO candidates (id, number, chamber, name, nim, cohort, origin, motto, vision, missions_json, programs_json, track_record_json, plate_variant, photo_url)
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
-         ON CONFLICT (id) DO NOTHING`,
-        [
-          c.id,
-          c.number,
-          c.chamber,
-          c.name,
-          c.nim,
-          c.cohort,
-          c.origin,
-          c.motto,
-          c.vision,
-          JSON.stringify(c.missions),
-          JSON.stringify(c.programs),
-          JSON.stringify(c.trackRecord),
-          c.plateVariant,
-          null,
-        ]
-      );
-    }
+  const initialCandidates = [...BPH_CANDIDATES, ...SENATOR_CANDIDATES];
+  for (const c of initialCandidates) {
+    await db.query(
+      `INSERT INTO candidates (id, number, chamber, name, nim, cohort, origin, motto, vision, missions_json, programs_json, track_record_json, plate_variant, photo_url)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+       ON CONFLICT (id) DO UPDATE SET
+         number = EXCLUDED.number,
+         chamber = EXCLUDED.chamber,
+         name = EXCLUDED.name,
+         nim = EXCLUDED.nim,
+         cohort = EXCLUDED.cohort,
+         origin = EXCLUDED.origin,
+         motto = EXCLUDED.motto,
+         vision = EXCLUDED.vision,
+         missions_json = EXCLUDED.missions_json,
+         programs_json = EXCLUDED.programs_json,
+         track_record_json = EXCLUDED.track_record_json,
+         plate_variant = EXCLUDED.plate_variant,
+         photo_url = EXCLUDED.photo_url`,
+      [
+        c.id,
+        c.number,
+        c.chamber,
+        c.name,
+        c.nim,
+        c.cohort,
+        c.origin,
+        c.motto,
+        c.vision,
+        JSON.stringify(c.missions),
+        JSON.stringify(c.programs),
+        JSON.stringify(c.trackRecord),
+        c.plateVariant,
+        c.photoUrl ?? null,
+      ]
+    );
   }
+
+  await db.query(
+    'DELETE FROM candidates WHERE id NOT IN ($1, $2, $3, $4)',
+    ['bph-01', 'bph-02', 'sen-01', 'sen-02']
+  );
 
   await db.persistSnapshot();
 }

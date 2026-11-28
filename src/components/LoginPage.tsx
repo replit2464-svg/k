@@ -46,7 +46,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
 
   // Admin login states
   const [adminStatus, setAdminStatus] = useState<AdminStatusResponse | null>(null);
-  const [adminUsername, setAdminUsername] = useState('admin_kpr_himatekia');
+  const [adminUsername, setAdminUsername] = useState('');
   const [adminPassword, setAdminPassword] = useState('');
   const [adminConfirmPassword, setAdminConfirmPassword] = useState('');
 
@@ -57,7 +57,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({
       .then((res) => {
         if (!active) return;
         setAdminStatus(res);
-        setAdminUsername(res.suggestedUsername || 'admin_kpr_himatekia');
+        setAdminUsername(res.suggestedUsername || '');
       })
       .catch(() => {
         // Ignore silent status check failure
